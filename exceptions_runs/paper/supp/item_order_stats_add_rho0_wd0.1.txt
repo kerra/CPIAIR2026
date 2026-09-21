@@ -1,0 +1,12 @@
+H3b item order — task add, rho 0, wd 0.1; 9 runs; 11101 test items per run; never-learned items dropped pairwise
+grid resolution: dense 25 steps in [0,1500], 250 after; grok steps: kimi s1000 6500, kimi s1001 5225, kimi s1002 7225, mamba s1000 425, mamba s1001 525, mamba s1002 425, trans s1000 425, trans s1001 325, trans s1002 400
+
+[within-arch reliability] Spearman between seeds of per-item grok times
+  transformer  0.48, 0.52, 0.49   (median 0.49)
+  mamba        0.02, 0.02, 0.02   (median 0.02)
+  kimi         0.02, 0.01, 0.02   (median 0.02)
+
+[cross-arch] Spearman of seed-mean per-item grok times (plan criterion >= 0.4)
+  transformer  vs mamba        rho = +0.068  (p = 6.2e-13, n = 11101)
+  transformer  vs kimi         rho = +0.133  (p = 3.9e-45, n = 11101)
+  mamba        vs kimi         rho = +0.029  (p = 2.3e-03, n = 11101)

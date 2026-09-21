@@ -1,0 +1,111 @@
+H1 (pooled over single-task runs; n=3 seeds per cell makes within-cell rho meaningless)
+
+[t_mech = first structure (raw half-rise, plan definition); t_beh = behavioural half-rise (test acc)]  n = 90
+  Spearman(t_mech, t_beh) = 0.934  (p = 3.2e-41); plan criterion rho >= 0.5
+  mechanism leads in 79/90 runs  (two-sided sign test p = 7.8e-14)
+  median t_beh / t_mech = 2.06  (IQR 1.64-2.81)
+    kimi        add  n=18  leads 18/18  median t_beh/t_mech = 2.97
+    kimi        div  n= 6  leads 6/6  median t_beh/t_mech = 7.48
+    kimi        max  n= 6  leads 0/6  median t_beh/t_mech = 0.37
+    mamba       add  n=18  leads 18/18  median t_beh/t_mech = 2.05
+    mamba       div  n= 6  leads 6/6  median t_beh/t_mech = 2.43
+    mamba       max  n= 6  leads 5/6  median t_beh/t_mech = 1.10
+    transformer add  n=18  leads 18/18  median t_beh/t_mech = 2.02
+    transformer div  n= 6  leads 6/6  median t_beh/t_mech = 3.04
+    transformer max  n= 6  leads 2/6  median t_beh/t_mech = 0.90
+  |t_mech - t_beh| / W [W on regular train items]: median = 1.26, share <= 0.25 = 0.00  (plan: median <= 0.25; n with W>0 = 66 of 90)
+
+[t_mech = first structure (raw half-rise, plan definition); t_beh = cognitive switch to rule/rulex]  n = 90
+  Spearman(t_mech, t_beh) = 0.951  (p = 8.7e-47); plan criterion rho >= 0.5
+  mechanism leads in 82/90 runs  (two-sided sign test p = 1.4e-16)
+  median t_beh / t_mech = 1.72  (IQR 1.43-2.52)
+    kimi        add  n=18  leads 18/18  median t_beh/t_mech = 2.55
+    kimi        div  n= 6  leads 6/6  median t_beh/t_mech = 5.35
+    kimi        max  n= 6  leads 6/6  median t_beh/t_mech = 1.42
+    mamba       add  n=18  leads 18/18  median t_beh/t_mech = 1.76
+    mamba       div  n= 6  leads 6/6  median t_beh/t_mech = 2.12
+    mamba       max  n= 6  leads 4/6  median t_beh/t_mech = 4.60
+    transformer add  n=18  leads 18/18  median t_beh/t_mech = 1.47
+    transformer div  n= 6  leads 6/6  median t_beh/t_mech = 2.44
+    transformer max  n= 6  leads 0/6  median t_beh/t_mech = 0.16
+  |t_mech - t_beh| / W [W on regular train items]: median = 0.69, share <= 0.25 = 0.05  (plan: median <= 0.25; n with W>0 = 66 of 90)
+
+[t_mech = final dominant mode only (robustness); t_beh = behavioural half-rise (test acc)]  n = 40
+  Spearman(t_mech, t_beh) = 0.779  (p = 3.2e-09); plan criterion rho >= 0.5
+  mechanism leads in 27/40 runs  (two-sided sign test p = 3.8e-02)
+  median t_beh / t_mech = 1.89  (IQR 0.90-2.92)
+    kimi        add  n=11  leads 11/11  median t_beh/t_mech = 2.82
+    kimi        div  n= 3  leads 2/3  median t_beh/t_mech = 5.10
+    mamba       add  n=10  leads 7/10  median t_beh/t_mech = 1.56
+    mamba       div  n= 1  leads 1/1  median t_beh/t_mech = 2.89
+    transformer add  n=13  leads 5/13  median t_beh/t_mech = 0.85
+    transformer div  n= 2  leads 1/2  median t_beh/t_mech = 1.75
+  |t_mech - t_beh| / W [W on regular train items]: median = 0.78, share <= 0.25 = 0.19  (plan: median <= 0.25; n with W>0 = 36 of 40)
+
+[t_mech = final dominant mode only (robustness); t_beh = cognitive switch to rule/rulex]  n = 40
+  Spearman(t_mech, t_beh) = 0.783  (p = 2.4e-09); plan criterion rho >= 0.5
+  mechanism leads in 24/40 runs  (two-sided sign test p = 2.7e-01)
+  median t_beh / t_mech = 1.42  (IQR 0.69-2.41)
+    kimi        add  n=11  leads 10/11  median t_beh/t_mech = 2.40
+    kimi        div  n= 3  leads 2/3  median t_beh/t_mech = 4.10
+    mamba       add  n=10  leads 6/10  median t_beh/t_mech = 1.16
+    mamba       div  n= 1  leads 1/1  median t_beh/t_mech = 2.26
+    transformer add  n=13  leads 4/13  median t_beh/t_mech = 0.64
+    transformer div  n= 2  leads 1/2  median t_beh/t_mech = 1.33
+  |t_mech - t_beh| / W [W on regular train items]: median = 0.88, share <= 0.25 = 0.19  (plan: median <= 0.25; n with W>0 = 36 of 40)
+
+rows where the dominant mode at the half-rise differs from the final one: 54 of 90 (add: pre-grok low-f ring -> high modes = frequency switch; div: Legendre 74 -> ring)
+    kimi_add_rho0.02_wd0.1_tiersNone s1001 add: first-structure 2549 | final-mode nan (mode 14)
+    kimi_add_rho0.02_wd0.3_tiersNone s1000 add: first-structure 3513 | final-mode nan (mode 16)
+    kimi_add_rho0.02_wd0.3_tiersNone s1001 add: first-structure 3321 | final-mode 5000 (mode 30)
+    kimi_add_rho0.02_wd0.3_tiersNone s1002 add: first-structure 955 | final-mode nan (mode 56)
+    kimi_add_rho0.05_wd0.3_tiersNone s1000 add: first-structure 4254 | final-mode 7200 (mode 62)
+    kimi_add_rho0.05_wd0.3_tiersNone s1002 add: first-structure 3388 | final-mode nan (mode 12)
+    kimi_add_rho0_wd0.1_tiersNone s1000 add: first-structure 1148 | final-mode 723 (mode 58)
+    kimi_add_rho0_wd0.1_tiersNone s1002 add: first-structure 1372 | final-mode nan (mode 71)
+    kimi_add_rho0_wd0.3_tiersNone s1000 add: first-structure 1094 | final-mode nan (mode 58)
+    kimi_add_rho0_wd0.3_tiersNone s1002 add: first-structure 1005 | final-mode nan (mode 67)
+    kimi_div_rho0.02_wd0.1_tiersNone s1000 div: first-structure 667 | final-mode nan (mode 74)
+    kimi_div_rho0.02_wd0.1_tiersNone s1002 div: first-structure 381 | final-mode 3400 (mode 27)
+    kimi_div_rho0_wd0.1_tiersNone s1000 div: first-structure 593 | final-mode 1030 (mode 14)
+    kimi_div_rho0_wd0.1_tiersNone s1001 div: first-structure 980 | final-mode nan (mode 15)
+    kimi_div_rho0_wd0.1_tiersNone s1002 div: first-structure 3058 | final-mode nan (mode 74)
+    mamba_add_rho0.02_wd0.1_tiersNone s1000 add: first-structure 134 | final-mode nan (mode 71)
+    mamba_add_rho0.02_wd0.1_tiersNone s1001 add: first-structure 309 | final-mode 224 (mode 23)
+    mamba_add_rho0.02_wd0.1_tiersNone s1002 add: first-structure 164 | final-mode nan (mode 61)
+    mamba_add_rho0.02_wd0.3_tiersNone s1000 add: first-structure 131 | final-mode nan (mode 73)
+    mamba_add_rho0.02_wd0.3_tiersNone s1001 add: first-structure 283 | final-mode 575 (mode 23)
+    mamba_add_rho0.02_wd0.3_tiersNone s1002 add: first-structure 189 | final-mode nan (mode 6)
+    mamba_add_rho0.05_wd0.1_tiersNone s1000 add: first-structure 150 | final-mode nan (mode 39)
+    mamba_add_rho0.05_wd0.1_tiersNone s1001 add: first-structure 314 | final-mode 550 (mode 69)
+    mamba_add_rho0.05_wd0.1_tiersNone s1002 add: first-structure 319 | final-mode 6000 (mode 27)
+    mamba_add_rho0.05_wd0.3_tiersNone s1000 add: first-structure 153 | final-mode nan (mode 26)
+    mamba_add_rho0.05_wd0.3_tiersNone s1001 add: first-structure 329 | final-mode 500 (mode 68)
+    mamba_add_rho0_wd0.1_tiersNone s1001 add: first-structure 305 | final-mode nan (mode 62)
+    mamba_add_rho0_wd0.3_tiersNone s1000 add: first-structure 153 | final-mode 325 (mode 70)
+    mamba_add_rho0_wd0.3_tiersNone s1002 add: first-structure 153 | final-mode nan (mode 20)
+    mamba_div_rho0.02_wd0.1_tiersNone s1001 div: first-structure 153 | final-mode nan (mode 45)
+    mamba_div_rho0.02_wd0.1_tiersNone s1002 div: first-structure 154 | final-mode nan (mode 52)
+    mamba_div_rho0_wd0.1_tiersNone s1001 div: first-structure 153 | final-mode nan (mode 30)
+    mamba_div_rho0_wd0.1_tiersNone s1002 div: first-structure 155 | final-mode nan (mode 65)
+    transformer_add_rho0.02_wd0.1_tiersNone s1000 add: first-structure 151 | final-mode 500 (mode 50)
+    transformer_add_rho0.02_wd0.1_tiersNone s1001 add: first-structure 132 | final-mode 425 (mode 14)
+    transformer_add_rho0.02_wd0.1_tiersNone s1002 add: first-structure 137 | final-mode 22 (mode 72)
+    transformer_add_rho0.02_wd0.3_tiersNone s1000 add: first-structure 149 | final-mode nan (mode 13)
+    transformer_add_rho0.02_wd0.3_tiersNone s1001 add: first-structure 130 | final-mode nan (mode 14)
+    transformer_add_rho0.02_wd0.3_tiersNone s1002 add: first-structure 136 | final-mode 17 (mode 72)
+    transformer_add_rho0.05_wd0.1_tiersNone s1000 add: first-structure 150 | final-mode 450 (mode 47)
+    transformer_add_rho0.05_wd0.1_tiersNone s1001 add: first-structure 137 | final-mode 350 (mode 9)
+    transformer_add_rho0.05_wd0.1_tiersNone s1002 add: first-structure 148 | final-mode 275 (mode 26)
+    transformer_add_rho0.05_wd0.3_tiersNone s1000 add: first-structure 150 | final-mode nan (mode 63)
+    transformer_add_rho0.05_wd0.3_tiersNone s1001 add: first-structure 136 | final-mode 350 (mode 9)
+    transformer_add_rho0.05_wd0.3_tiersNone s1002 add: first-structure 148 | final-mode 300 (mode 26)
+    transformer_add_rho0_wd0.1_tiersNone s1001 add: first-structure 141 | final-mode nan (mode 8)
+    transformer_add_rho0_wd0.1_tiersNone s1002 add: first-structure 154 | final-mode 907 (mode 59)
+    transformer_add_rho0_wd0.3_tiersNone s1001 add: first-structure 141 | final-mode nan (mode 8)
+    transformer_add_rho0_wd0.3_tiersNone s1002 add: first-structure 153 | final-mode 350 (mode 59)
+    transformer_div_rho0.02_wd0.1_tiersNone s1000 div: first-structure 153 | final-mode nan (mode 45)
+    transformer_div_rho0.02_wd0.1_tiersNone s1002 div: first-structure 72 | final-mode 1539 (mode 50)
+    transformer_div_rho0_wd0.1_tiersNone s1000 div: first-structure 144 | final-mode nan (mode 1)
+    transformer_div_rho0_wd0.1_tiersNone s1001 div: first-structure 153 | final-mode nan (mode 65)
+    transformer_div_rho0_wd0.1_tiersNone s1002 div: first-structure 12 | final-mode nan (mode 53)

@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# run trees are local: only the paper outputs are tracked
+/exceptions_runs/*
+!/exceptions_runs/paper/
+/exceptions_runs_pos/

@@ -1,0 +1,34 @@
+Validation of the cognitive-model comparison (single-task add runs; checkpoints nearest 0.5, 1, 2 x grok and the final dump)
+runs: 54; checkpoints: 210; models: ['alcove_lite', 'atrium_lite', 'gcm_circular', 'gcm_hamming', 'gcm_linear', 'prototype', 'rule', 'rulex', 'uniform']
+
+[0.5g]  n checkpoints = 52
+  best-by-BIC == best-by-held-out-LL (six standard models): 52/52 same model, 52/52 same family
+  winners by BIC: {'gcm_hamming': 39, 'rulex': 13}; by held-out LL: {'gcm_hamming': 39, 'rulex': 13}
+  with the three extra models: winners {'atrium_lite': 36, 'gcm_hamming': 15, 'rulex': 1}; family of the winner changes in 36/52; ATRIUM-lite wins 36/52
+  ALCOVE-lite: fitted attention w median 0.90 (IQR 0.65-0.90); beats the equal-attention circular GCM by BIC in 48/52
+  prototype model: mean BIC rank among 7 models = 4.9 (7 = worst); median dBIC(prototype - uniform)/n = -0.009 nats/probe
+  permutation null (50 shuffles of the answers over probes): observed dBIC(uniform - gcm_hamming) exceeds the null maximum in 49/52 checkpoints (null max median 131.6 nats, observed median 6847); dBIC(gcm - rule family) exceeds the null maximum in 13/52 (null max median -133.9, observed median -5595)
+
+[1g]  n checkpoints = 52
+  best-by-BIC == best-by-held-out-LL (six standard models): 46/52 same model, 52/52 same family
+  winners by BIC: {'rulex': 34, 'rule': 18}; by held-out LL: {'rulex': 40, 'rule': 12}
+  with the three extra models: winners {'rulex': 33, 'atrium_lite': 13, 'rule': 6}; family of the winner changes in 13/52; ATRIUM-lite wins 13/52
+  ALCOVE-lite: fitted attention w median 0.50 (IQR 0.50-0.50); beats the equal-attention circular GCM by BIC in 0/52
+  prototype model: mean BIC rank among 7 models = 5.0 (7 = worst); median dBIC(prototype - uniform)/n = -0.009 nats/probe
+  permutation null (50 shuffles of the answers over probes): observed dBIC(uniform - gcm_hamming) exceeds the null maximum in 0/52 checkpoints (null max median -193.8 nats, observed median -212); dBIC(gcm - rule family) exceeds the null maximum in 52/52 (null max median 193.4, observed median 105881)
+
+[2g]  n checkpoints = 52
+  best-by-BIC == best-by-held-out-LL (six standard models): 48/52 same model, 52/52 same family
+  winners by BIC: {'rulex': 34, 'rule': 18}; by held-out LL: {'rulex': 38, 'rule': 14}
+  with the three extra models: winners {'rulex': 34, 'rule': 18}; family of the winner changes in 0/52; ATRIUM-lite wins 0/52
+  ALCOVE-lite: fitted attention w median 0.50 (IQR 0.50-0.50); beats the equal-attention circular GCM by BIC in 0/52
+  prototype model: mean BIC rank among 7 models = 5.0 (7 = worst); median dBIC(prototype - uniform)/n = -0.010 nats/probe
+  permutation null (50 shuffles of the answers over probes): observed dBIC(uniform - gcm_hamming) exceeds the null maximum in 0/52 checkpoints (null max median -211.7 nats, observed median -233); dBIC(gcm - rule family) exceeds the null maximum in 52/52 (null max median 212.1, observed median 111264)
+
+[final]  n checkpoints = 54
+  best-by-BIC == best-by-held-out-LL (six standard models): 53/54 same model, 54/54 same family
+  winners by BIC: {'rulex': 36, 'rule': 18}; by held-out LL: {'rulex': 37, 'rule': 17}
+  with the three extra models: winners {'atrium_lite': 1, 'rulex': 35, 'rule': 18}; family of the winner changes in 1/54; ATRIUM-lite wins 1/54
+  ALCOVE-lite: fitted attention w median 0.50 (IQR 0.50-0.50); beats the equal-attention circular GCM by BIC in 1/54
+  prototype model: mean BIC rank among 7 models = 5.0 (7 = worst); median dBIC(prototype - uniform)/n = -0.010 nats/probe
+  permutation null (50 shuffles of the answers over probes): observed dBIC(uniform - gcm_hamming) exceeds the null maximum in 0/54 checkpoints (null max median -212.4 nats, observed median -231); dBIC(gcm - rule family) exceeds the null maximum in 54/54 (null max median 210.8, observed median 111744)

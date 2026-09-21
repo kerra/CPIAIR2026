@@ -1,0 +1,37 @@
+task = add
+Lesion sweep statistics (Fourier side = in; per-run values, seeds x rho x WD pooled within arch)
+runs: transformer 18, mamba 18, kimi 18
+
+[C_R] etop (remove the most energetic modes): dose-response of the RULE (test acc) and of the exceptions
+  transformer  Spearman(dose, test_acc) = -0.96, (dose, acc_exc) = -0.98; median D50 rule = 0.25, D50 exc = 0.22 (energy fraction)
+  mamba        Spearman(dose, test_acc) = -0.86, (dose, acc_exc) = -0.94; median D50 rule = 0.34, D50 exc = 0.74 (energy fraction)
+  kimi         Spearman(dose, test_acc) = -0.96, (dose, acc_exc) = -0.94; median D50 rule = 0.36, D50 exc = 0.66 (energy fraction)
+
+[C_E] ebottom (remove the LEAST energetic modes): do exceptions break before the rule?
+  transformer  q=0.5: SI median = +0.60, SI >= 0.3 in 12/12 runs; drop test = 0.28, drop exc = 0.86
+  transformer  median D50 exc = 0.28 vs D50 rule = 0.58; max overreg with rule intact (test >= .9): median 0.57, >= 0.2 in 12/12 runs
+  mamba        q=0.5: SI median = +0.97, SI >= 0.3 in 12/12 runs; drop test = -0.00, drop exc = 0.97
+  mamba        median D50 exc = 0.24 vs D50 rule = 0.75; max overreg with rule intact (test >= .9): median 0.96, >= 0.2 in 12/12 runs
+  kimi         q=0.5: SI median = +0.77, SI >= 0.3 in 12/12 runs; drop test = 0.05, drop exc = 0.82
+  kimi         median D50 exc = 0.35 vs D50 rule = 0.69; max overreg with rule intact (test >= .9): median 0.77, >= 0.2 in 9/12 runs
+
+[specificity] ebottom vs erand (random modes, same energy fraction), paired over runs
+  transformer  rule damage: bottom < random in 103/132 (p=9.8e-17); exception damage: bottom > random in 68/132 (p=9.2e-01)
+  mamba        rule damage: bottom < random in 121/132 (p=1.1e-20); exception damage: bottom > random in 114/132 (p=2.0e-18)
+  kimi         rule damage: bottom < random in 111/132 (p=3.2e-17); exception damage: bottom > random in 102/132 (p=2.5e-15)
+
+[units] gradient-ranked units vs random units (same k), paired over runs, rho > 0
+  transformer  k=64: drop exc sel 0.03 vs rnd 0.00; drop test sel -0.00 vs rnd 0.00; induced overreg sel +0.03 vs rnd +0.00; sel > rnd on exc in 12/12
+  transformer  k=256: drop exc sel 0.22 vs rnd 0.00; drop test sel -0.01 vs rnd 0.00; induced overreg sel +0.21 vs rnd +0.00; sel > rnd on exc in 12/12
+  mamba        k=64: drop exc sel 0.01 vs rnd 0.00; drop test sel -0.00 vs rnd 0.00; induced overreg sel +0.00 vs rnd +0.00; sel > rnd on exc in 11/12
+  mamba        k=256: drop exc sel 0.07 vs rnd 0.00; drop test sel -0.00 vs rnd 0.00; induced overreg sel +0.04 vs rnd +0.00; sel > rnd on exc in 12/12
+  kimi         k=64: drop exc sel 0.00 vs rnd 0.00; drop test sel -0.00 vs rnd 0.00; induced overreg sel +0.00 vs rnd +0.00; sel > rnd on exc in 4/12
+  kimi         k=256: drop exc sel 0.01 vs rnd 0.00; drop test sel -0.00 vs rnd 0.00; induced overreg sel +0.01 vs rnd +0.00; sel > rnd on exc in 11/12
+
+[low-pass] best cognitive model along f_cut (74 -> 0) and GCM kernel width
+  transformer  rule -> gcm -> ... in 17/18 runs; paths: rule>gcm x4; rulex>rule>gcm>uniform>gcm x2; rulex>gcm>uniform>gcm x2; rulex>rule>gcm>uniform x2; rulex>gcm>rule>uniform>gcm>uniform>gcm x1; rulex>rule>uniform>rule>uniform>gcm>uniform x1; rulex>rule>uniform x1; rulex>gcm>uniform x1; rulex>gcm>uniform>gcm>uniform x1; rulex>rule>gcm x1; rule>gcm>uniform>gcm x1; rule>gcm>uniform>gcm>uniform x1
+               Spearman(f_cut, GCM lambda | test acc < .9) = +0.26 (kernel sharpens with bandwidth if > 0)
+  mamba        rule -> gcm -> ... in 17/18 runs; paths: rulex>gcm>uniform x2; rulex>uniform>gcm>uniform x2; rule>gcm>uniform>gcm x2; rule>gcm x2; rulex>gcm>uniform>gcm x1; rulex>gcm>rulex>gcm>uniform x1; rulex>gcm>uniform>rule>uniform x1; rulex>rule>gcm x1; rulex>gcm x1; rulex>rule>uniform x1; rulex>rule>gcm>uniform x1; rulex>rule>uniform>gcm>uniform>gcm x1; rule>uniform>rule>uniform>gcm x1; rule>gcm>uniform>gcm>uniform x1
+               Spearman(f_cut, GCM lambda | test acc < .9) = +0.31 (kernel sharpens with bandwidth if > 0)
+  kimi         rule -> gcm -> ... in 17/18 runs; paths: rulex>gcm>uniform x3; rulex>gcm x2; rulex>gcm>rulex>rule>gcm>uniform x1; rulex>gcm>uniform>gcm>uniform x1; rulex>uniform>gcm>uniform>rule>gcm x1; rulex>rule>gcm>uniform>gcm x1; rulex>rule>gcm>uniform x1; rulex>gcm>rulex>gcm>rulex>gcm>rule>uniform>rule>uniform x1; rulex>rule>rulex>rule>rulex>rule>gcm x1; rule>gcm x1; rule>gcm>rule>gcm x1; rule>gcm>uniform x1; rule>uniform>gcm x1; rule>uniform>gcm>uniform>gcm x1; rule>uniform>rule>uniform x1
+               Spearman(f_cut, GCM lambda | test acc < .9) = +0.38 (kernel sharpens with bandwidth if > 0)

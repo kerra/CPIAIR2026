@@ -1,0 +1,10 @@
+arch,task,metric,location,value,modes_per_seed,circle_corr,best_anywhere
+transformer,add,"F, modes ≥ 3",L1_eq,0.96 ± 0.05,30 / 29 / 29,0.62,L1_eq (0.96; modes 30 / 29 / 29)
+transformer,div,"F, dlog basis",ffn0_out_eq,0.93 ± 0.04,74 / 74 / 14,0.53,t0_ffn_mid_eq (0.94; modes 74 / 74 / 14)
+transformer,max,linear corr,ffn0_out_eq,0.56 ± 0.23,– / – / –,0.44,t0_q_rope_eq (0.89; modes – / – / –)
+mamba,add,"F, modes ≥ 3",ssm0_out_eq,0.54 ± 0.16,3 / 9 / 3,0.58,m0_gated_y_eq (0.85; modes 3 / 9 / 3)
+mamba,div,"F, dlog basis",final_eq,0.70 ± 0.05,74 / 7 / 4,0.51,L0_pos2_b (0.78; modes 27 / 7 / 4)
+mamba,max,linear corr,emb_a,0.40 ± 0.12,– / – / –,0.45,final_pos0_a (0.76; modes – / – / –)
+kimi,add,"F, modes ≥ 3",kda1_out_eq,1.00 ± 0.00,18 / 33 / 3,0.95,kda1_out_eq (1.00; modes 18 / 33 / 3)
+kimi,div,"F, dlog basis",kda1_out_eq,1.00 ± 0.00,3 / 47 / 46,0.99,kda1_out_eq (1.00; modes 3 / 47 / 46)
+kimi,max,linear corr,emb_a,0.28 ± 0.02,– / – / –,0.38,kda0_gate_eq (0.86; modes – / – / –)

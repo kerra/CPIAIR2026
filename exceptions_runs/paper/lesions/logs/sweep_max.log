@@ -1,0 +1,508 @@
+18 runs | device cuda | lesions ['neurons', 'randunits'] | side in | steps ['final']
+[run] kimi_max_rho0.02_wd0.1_tiersNone seed=1000
+  [kimi s1000 step final] baseline: test 0.978 acc_exc 1.000 overreg 0.000 best=rulex
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    unit sites: ['backbone.blocks.0.kda_ffns.0.W_down', 'backbone.blocks.0.kda_ffns.1.W_down', 'backbone.blocks.0.kda_ffns.2.W_down', 'backbone.blocks.0.full_ffn.W_down'] -> 1920 units, ranked by grad; top: d'=0.10 attr=3.6; share of positive attribution in top 32 = 0.12
+    done in 19s, 45 rows so far
+[run] kimi_max_rho0.02_wd0.1_tiersNone seed=1001
+  [kimi s1001 step final] baseline: test 0.980 acc_exc 0.995 overreg 0.005 best=rulex
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    unit sites: ['backbone.blocks.0.kda_ffns.0.W_down', 'backbone.blocks.0.kda_ffns.1.W_down', 'backbone.blocks.0.kda_ffns.2.W_down', 'backbone.blocks.0.full_ffn.W_down'] -> 1920 units, ranked by grad; top: d'=-0.05 attr=4.9; share of positive attribution in top 32 = 0.12
+    done in 20s, 90 rows so far
+[run] kimi_max_rho0.02_wd0.1_tiersNone seed=1002
+  [kimi s1002 step final] baseline: test 0.979 acc_exc 0.977 overreg 0.023 best=rulex
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    unit sites: ['backbone.blocks.0.kda_ffns.0.W_down', 'backbone.blocks.0.kda_ffns.1.W_down', 'backbone.blocks.0.kda_ffns.2.W_down', 'backbone.blocks.0.full_ffn.W_down'] -> 1920 units, ranked by grad; top: d'=-0.16 attr=5.0; share of positive attribution in top 32 = 0.12
+    done in 19s, 135 rows so far
+[run] kimi_max_rho0_wd0.1_tiersNone seed=1000
+  [kimi s1000 step final] baseline: test 0.983 acc_exc nan overreg nan best=rule
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    [units] skipped: run has no exceptions (rho = 0)
+    done in 3s, 136 rows so far
+[run] kimi_max_rho0_wd0.1_tiersNone seed=1001
+  [kimi s1001 step final] baseline: test 0.984 acc_exc nan overreg nan best=rule
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    [units] skipped: run has no exceptions (rho = 0)
+    done in 3s, 137 rows so far
+[run] kimi_max_rho0_wd0.1_tiersNone seed=1002
+  [kimi s1002 step final] baseline: test 0.982 acc_exc nan overreg nan best=rule
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    [units] skipped: run has no exceptions (rho = 0)
+    done in 3s, 138 rows so far
+[run] mamba_max_rho0.02_wd0.1_tiersNone seed=1000
+  [mamba s1000 step final] baseline: test 0.980 acc_exc 0.986 overreg 0.014 best=rulex
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    unit sites: ['backbone.layers.0.mamba.out_proj', 'backbone.layers.1.mamba.out_proj'] -> 1536 units, ranked by grad; top: d'=0.11 attr=16.1; share of positive attribution in top 32 = 0.18
+    done in 36s, 183 rows so far
+[run] mamba_max_rho0.02_wd0.1_tiersNone seed=1001
+  [mamba s1001 step final] baseline: test 0.977 acc_exc 0.982 overreg 0.014 best=rulex
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    unit sites: ['backbone.layers.0.mamba.out_proj', 'backbone.layers.1.mamba.out_proj'] -> 1536 units, ranked by grad; top: d'=0.20 attr=11.1; share of positive attribution in top 32 = 0.16
+    done in 39s, 228 rows so far
+[run] mamba_max_rho0.02_wd0.1_tiersNone seed=1002
+  [mamba s1002 step final] baseline: test 0.979 acc_exc 0.986 overreg 0.009 best=rulex
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    unit sites: ['backbone.layers.0.mamba.out_proj', 'backbone.layers.1.mamba.out_proj'] -> 1536 units, ranked by grad; top: d'=-0.00 attr=14.7; share of positive attribution in top 32 = 0.16
+    done in 35s, 273 rows so far
+[run] mamba_max_rho0_wd0.1_tiersNone seed=1000
+  [mamba s1000 step final] baseline: test 0.985 acc_exc nan overreg nan best=rule
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    [units] skipped: run has no exceptions (rho = 0)
+    done in 3s, 274 rows so far
+[run] mamba_max_rho0_wd0.1_tiersNone seed=1001
+  [mamba s1001 step final] baseline: test 0.986 acc_exc nan overreg nan best=rule
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    [units] skipped: run has no exceptions (rho = 0)
+    done in 4s, 275 rows so far
+[run] mamba_max_rho0_wd0.1_tiersNone seed=1002
+  [mamba s1002 step final] baseline: test 0.986 acc_exc nan overreg nan best=rule
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    [units] skipped: run has no exceptions (rho = 0)
+    done in 4s, 276 rows so far
+[run] transformer_max_rho0.02_wd0.1_tiersNone seed=1000
+  [transformer s1000 step final] baseline: test 0.982 acc_exc 0.883 overreg 0.108 best=rulex
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    unit sites: ['backbone.layers.0.ffn.down_proj', 'backbone.layers.1.ffn.down_proj'] -> 1536 units, ranked by grad; top: d'=0.15 attr=6.3; share of positive attribution in top 32 = 0.14
+    done in 12s, 321 rows so far
+[run] transformer_max_rho0.02_wd0.1_tiersNone seed=1001
+  [transformer s1001 step final] baseline: test 0.981 acc_exc 0.860 overreg 0.135 best=rulex
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    unit sites: ['backbone.layers.0.ffn.down_proj', 'backbone.layers.1.ffn.down_proj'] -> 1536 units, ranked by grad; top: d'=-0.04 attr=6.6; share of positive attribution in top 32 = 0.16
+    done in 12s, 366 rows so far
+[run] transformer_max_rho0.02_wd0.1_tiersNone seed=1002
+  [transformer s1002 step final] baseline: test 0.981 acc_exc 0.865 overreg 0.135 best=rulex
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    unit sites: ['backbone.layers.0.ffn.down_proj', 'backbone.layers.1.ffn.down_proj'] -> 1536 units, ranked by grad; top: d'=-0.07 attr=5.2; share of positive attribution in top 32 = 0.15
+    done in 12s, 411 rows so far
+[run] transformer_max_rho0_wd0.1_tiersNone seed=1000
+  [transformer s1000 step final] baseline: test 0.989 acc_exc nan overreg nan best=rule
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    [units] skipped: run has no exceptions (rho = 0)
+    done in 3s, 412 rows so far
+[run] transformer_max_rho0_wd0.1_tiersNone seed=1001
+  [transformer s1001 step final] baseline: test 0.990 acc_exc nan overreg nan best=rule
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    [units] skipped: run has no exceptions (rho = 0)
+    done in 3s, 413 rows so far
+[run] transformer_max_rho0_wd0.1_tiersNone seed=1002
+  [transformer s1002 step final] baseline: test 0.989 acc_exc nan overreg nan best=rule
+    [fourier] skipped for task 'max' (no group structure; unit lesions only)
+    [units] skipped: run has no exceptions (rho = 0)
+    done in 2s, 414 rows so far
+
+saved exceptions_runs/paper/lesions/lesions_table_max.csv (414 rows)
+       arch  seed  step    lesion  side  param  dose  test_acc  test_ce  acc_exc  overreg_rate  exc_logit_gap best_model  gcm_circular_lambda  rulex_m
+       kimi  1000 final      none     -      0 0.000     0.978    0.096    1.000         0.000         10.878      rulex                 40.0     1.00
+       kimi  1000 final   neurons units      0 0.000     0.978    0.096    1.000         0.000         10.878      rulex                 40.0     1.00
+       kimi  1000 final   neurons units      1 0.001     0.978    0.096    1.000         0.000         10.861      rulex                 40.0     1.00
+       kimi  1000 final   neurons units      2 0.001     0.978    0.096    1.000         0.000         10.844      rulex                 40.0     1.00
+       kimi  1000 final   neurons units      4 0.002     0.978    0.096    1.000         0.000         10.811      rulex                 40.0     1.00
+       kimi  1000 final   neurons units      8 0.004     0.978    0.096    1.000         0.000         10.750      rulex                 40.0     1.00
+       kimi  1000 final   neurons units     16 0.008     0.978    0.096    1.000         0.000         10.645      rulex                 40.0     1.00
+       kimi  1000 final   neurons units     32 0.017     0.978    0.095    1.000         0.000         10.458      rulex                 40.0     1.00
+       kimi  1000 final   neurons units     64 0.033     0.978    0.093    1.000         0.000         10.160      rulex                 40.0     1.00
+       kimi  1000 final   neurons units    128 0.067     0.979    0.092    0.995         0.005          9.685      rulex                 40.0     0.98
+       kimi  1000 final   neurons units    256 0.133     0.979    0.089    0.991         0.009          8.963      rulex                 40.0     0.98
+       kimi  1000 final   neurons units    512 0.267     0.979    0.085    0.964         0.027          7.891      rulex                 40.0     0.98
+       kimi  1000 final randunits units      0 0.000     0.978    0.096    1.000         0.000         10.878      rulex                 40.0     1.00
+       kimi  1000 final randunits units      1 0.001     0.978    0.096    1.000         0.000         10.876      rulex                 40.0     1.00
+       kimi  1000 final randunits units      2 0.001     0.978    0.096    1.000         0.000         10.874      rulex                 40.0     1.00
+       kimi  1000 final randunits units      4 0.002     0.978    0.096    1.000         0.000         10.865      rulex                 40.0     1.00
+       kimi  1000 final randunits units      8 0.004     0.978    0.096    1.000         0.000         10.878      rulex                 40.0     1.00
+       kimi  1000 final randunits units     16 0.008     0.978    0.096    1.000         0.000         10.825      rulex                 40.0     1.00
+       kimi  1000 final randunits units     32 0.017     0.978    0.096    1.000         0.000         10.834      rulex                 40.0     1.00
+       kimi  1000 final randunits units     64 0.033     0.978    0.095    0.995         0.005         10.759      rulex                 40.0     0.98
+       kimi  1000 final randunits units    128 0.067     0.979    0.094    1.000         0.000         10.670      rulex                 40.0     1.00
+       kimi  1000 final randunits units    256 0.133     0.978    0.095    1.000         0.000         10.483      rulex                 40.0     1.00
+       kimi  1000 final randunits units    512 0.267     0.979    0.091    0.995         0.005         10.035      rulex                 40.0     0.98
+       kimi  1000 final randunits units      0 0.000     0.978    0.096    1.000         0.000         10.878      rulex                 40.0     1.00
+       kimi  1000 final randunits units      1 0.001     0.978    0.096    1.000         0.000         10.870      rulex                 40.0     1.00
+       kimi  1000 final randunits units      2 0.001     0.978    0.096    1.000         0.000         10.874      rulex                 40.0     1.00
+       kimi  1000 final randunits units      4 0.002     0.978    0.096    1.000         0.000         10.872      rulex                 40.0     1.00
+       kimi  1000 final randunits units      8 0.004     0.978    0.096    1.000         0.000         10.873      rulex                 40.0     1.00
+       kimi  1000 final randunits units     16 0.008     0.978    0.096    1.000         0.000         10.857      rulex                 40.0     1.00
+       kimi  1000 final randunits units     32 0.017     0.978    0.096    1.000         0.000         10.823      rulex                 40.0     1.00
+       kimi  1000 final randunits units     64 0.033     0.979    0.095    1.000         0.000         10.765      rulex                 40.0     1.00
+       kimi  1000 final randunits units    128 0.067     0.978    0.095    1.000         0.000         10.716      rulex                 40.0     1.00
+       kimi  1000 final randunits units    256 0.133     0.978    0.095    1.000         0.000         10.536      rulex                 40.0     1.00
+       kimi  1000 final randunits units    512 0.267     0.978    0.089    1.000         0.000          9.934      rulex                 40.0     1.00
+       kimi  1000 final randunits units      0 0.000     0.978    0.096    1.000         0.000         10.878      rulex                 40.0     1.00
+       kimi  1000 final randunits units      1 0.001     0.978    0.096    1.000         0.000         10.879      rulex                 40.0     1.00
+       kimi  1000 final randunits units      2 0.001     0.978    0.096    1.000         0.000         10.872      rulex                 40.0     1.00
+       kimi  1000 final randunits units      4 0.002     0.978    0.096    1.000         0.000         10.871      rulex                 40.0     1.00
+       kimi  1000 final randunits units      8 0.004     0.978    0.096    1.000         0.000         10.871      rulex                 40.0     1.00
+       kimi  1000 final randunits units     16 0.008     0.978    0.096    1.000         0.000         10.851      rulex                 40.0     1.00
+       kimi  1000 final randunits units     32 0.017     0.978    0.096    1.000         0.000         10.827      rulex                 40.0     1.00
+       kimi  1000 final randunits units     64 0.033     0.978    0.096    1.000         0.000         10.816      rulex                 40.0     1.00
+       kimi  1000 final randunits units    128 0.067     0.978    0.094    1.000         0.000         10.690      rulex                 40.0     1.00
+       kimi  1000 final randunits units    256 0.133     0.978    0.093    1.000         0.000         10.460      rulex                 40.0     1.00
+       kimi  1000 final randunits units    512 0.267     0.979    0.090    0.991         0.009          9.974      rulex                 40.0     0.98
+       kimi  1001 final      none     -      0 0.000     0.980    0.093    0.995         0.005         10.514      rulex                 40.0     0.98
+       kimi  1001 final   neurons units      0 0.000     0.980    0.093    0.995         0.005         10.514      rulex                 40.0     0.98
+       kimi  1001 final   neurons units      1 0.001     0.980    0.093    0.995         0.005         10.489      rulex                 40.0     0.98
+       kimi  1001 final   neurons units      2 0.001     0.980    0.093    0.995         0.005         10.467      rulex                 40.0     0.98
+       kimi  1001 final   neurons units      4 0.002     0.980    0.093    0.995         0.005         10.431      rulex                 40.0     0.98
+       kimi  1001 final   neurons units      8 0.004     0.980    0.093    0.991         0.009         10.376      rulex                 40.0     0.98
+       kimi  1001 final   neurons units     16 0.008     0.980    0.092    0.991         0.009         10.278      rulex                 40.0     0.98
+       kimi  1001 final   neurons units     32 0.017     0.980    0.092    0.995         0.005         10.116      rulex                 40.0     0.98
+       kimi  1001 final   neurons units     64 0.033     0.980    0.091    0.991         0.009          9.828      rulex                 40.0     0.98
+       kimi  1001 final   neurons units    128 0.067     0.980    0.089    0.982         0.018          9.354      rulex                 40.0     0.98
+       kimi  1001 final   neurons units    256 0.133     0.980    0.087    0.973         0.023          8.632      rulex                 40.0     0.98
+       kimi  1001 final   neurons units    512 0.267     0.980    0.084    0.964         0.027          7.563      rulex                 40.0     0.98
+       kimi  1001 final randunits units      0 0.000     0.980    0.093    0.995         0.005         10.514      rulex                 40.0     0.98
+       kimi  1001 final randunits units      1 0.001     0.980    0.093    0.995         0.005         10.512      rulex                 40.0     0.98
+       kimi  1001 final randunits units      2 0.001     0.980    0.093    0.995         0.005         10.510      rulex                 40.0     0.98
+       kimi  1001 final randunits units      4 0.002     0.980    0.093    0.995         0.005         10.500      rulex                 40.0     0.98
+       kimi  1001 final randunits units      8 0.004     0.980    0.093    0.995         0.005         10.515      rulex                 40.0     0.98
+       kimi  1001 final randunits units     16 0.008     0.980    0.092    0.991         0.009         10.473      rulex                 40.0     0.98
+       kimi  1001 final randunits units     32 0.017     0.980    0.093    0.991         0.009         10.455      rulex                 40.0     0.98
+       kimi  1001 final randunits units     64 0.033     0.980    0.093    0.995         0.005         10.402      rulex                 40.0     0.98
+       kimi  1001 final randunits units    128 0.067     0.980    0.091    0.995         0.005         10.337      rulex                 40.0     0.98
+       kimi  1001 final randunits units    256 0.133     0.980    0.091    0.991         0.009         10.167      rulex                 40.0     0.98
+       kimi  1001 final randunits units    512 0.267     0.980    0.089    0.995         0.005          9.625      rulex                 40.0     0.98
+       kimi  1001 final randunits units      0 0.000     0.980    0.093    0.995         0.005         10.514      rulex                 40.0     0.98
+       kimi  1001 final randunits units      1 0.001     0.980    0.093    0.995         0.005         10.506      rulex                 40.0     0.98
+       kimi  1001 final randunits units      2 0.001     0.980    0.093    0.995         0.005         10.509      rulex                 40.0     0.98
+       kimi  1001 final randunits units      4 0.002     0.980    0.093    0.995         0.005         10.503      rulex                 40.0     0.98
+       kimi  1001 final randunits units      8 0.004     0.980    0.093    0.995         0.005         10.509      rulex                 40.0     0.98
+       kimi  1001 final randunits units     16 0.008     0.980    0.093    0.995         0.005         10.486      rulex                 40.0     0.98
+       kimi  1001 final randunits units     32 0.017     0.980    0.093    1.000         0.000         10.457      rulex                 40.0     1.00
+       kimi  1001 final randunits units     64 0.033     0.980    0.093    0.995         0.005         10.424      rulex                 40.0     0.98
+       kimi  1001 final randunits units    128 0.067     0.980    0.093    0.986         0.014         10.360      rulex                 40.0     0.98
+       kimi  1001 final randunits units    256 0.133     0.980    0.091    0.995         0.005         10.189      rulex                 40.0     0.98
+       kimi  1001 final randunits units    512 0.267     0.980    0.088    0.991         0.009          9.620      rulex                 40.0     0.98
+       kimi  1001 final randunits units      0 0.000     0.980    0.093    0.995         0.005         10.514      rulex                 40.0     0.98
+       kimi  1001 final randunits units      1 0.001     0.980    0.093    0.995         0.005         10.515      rulex                 40.0     0.98
+       kimi  1001 final randunits units      2 0.001     0.980    0.093    0.995         0.005         10.511      rulex                 40.0     0.98
+       kimi  1001 final randunits units      4 0.002     0.980    0.093    0.995         0.005         10.506      rulex                 40.0     0.98
+       kimi  1001 final randunits units      8 0.004     0.980    0.093    0.991         0.009         10.501      rulex                 40.0     0.98
+       kimi  1001 final randunits units     16 0.008     0.980    0.093    0.995         0.005         10.489      rulex                 40.0     0.98
+       kimi  1001 final randunits units     32 0.017     0.980    0.092    0.995         0.005         10.463      rulex                 40.0     0.98
+       kimi  1001 final randunits units     64 0.033     0.980    0.092    0.995         0.005         10.449      rulex                 40.0     0.98
+       kimi  1001 final randunits units    128 0.067     0.980    0.093    1.000         0.000         10.313      rulex                 40.0     1.00
+       kimi  1001 final randunits units    256 0.133     0.980    0.092    0.995         0.005         10.128      rulex                 40.0     0.98
+       kimi  1001 final randunits units    512 0.267     0.978    0.090    0.986         0.014          9.634      rulex                 40.0     0.98
+       kimi  1002 final      none     -      0 0.000     0.979    0.098    0.977         0.023         10.187      rulex                 40.0     0.98
+       kimi  1002 final   neurons units      0 0.000     0.979    0.098    0.977         0.023         10.187      rulex                 40.0     0.98
+       kimi  1002 final   neurons units      1 0.001     0.979    0.098    0.977         0.023         10.162      rulex                 40.0     0.98
+       kimi  1002 final   neurons units      2 0.001     0.979    0.098    0.977         0.023         10.142      rulex                 40.0     0.98
+       kimi  1002 final   neurons units      4 0.002     0.979    0.098    0.977         0.023         10.105      rulex                 40.0     0.98
+       kimi  1002 final   neurons units      8 0.004     0.979    0.098    0.977         0.023         10.046      rulex                 40.0     0.98
+       kimi  1002 final   neurons units     16 0.008     0.979    0.098    0.977         0.023          9.938      rulex                 40.0     0.98
+       kimi  1002 final   neurons units     32 0.017     0.979    0.097    0.977         0.023          9.765      rulex                 40.0     0.98
+       kimi  1002 final   neurons units     64 0.033     0.979    0.097    0.973         0.027          9.470      rulex                 40.0     0.98
+       kimi  1002 final   neurons units    128 0.067     0.979    0.095    0.968         0.032          8.996      rulex                 40.0     0.96
+       kimi  1002 final   neurons units    256 0.133     0.979    0.094    0.968         0.032          8.276      rulex                 40.0     0.96
+       kimi  1002 final   neurons units    512 0.267     0.980    0.090    0.959         0.041          7.247      rulex                 40.0     0.96
+       kimi  1002 final randunits units      0 0.000     0.979    0.098    0.977         0.023         10.187      rulex                 40.0     0.98
+       kimi  1002 final randunits units      1 0.001     0.979    0.098    0.977         0.023         10.185      rulex                 40.0     0.98
+       kimi  1002 final randunits units      2 0.001     0.979    0.098    0.977         0.023         10.184      rulex                 40.0     0.98
+       kimi  1002 final randunits units      4 0.002     0.979    0.098    0.977         0.023         10.175      rulex                 40.0     0.98
+       kimi  1002 final randunits units      8 0.004     0.978    0.098    0.977         0.023         10.189      rulex                 40.0     0.98
+       kimi  1002 final randunits units     16 0.008     0.978    0.098    0.977         0.023         10.145      rulex                 40.0     0.98
+       kimi  1002 final randunits units     32 0.017     0.978    0.098    0.973         0.027         10.127      rulex                 40.0     0.98
+       kimi  1002 final randunits units     64 0.033     0.978    0.098    0.977         0.023         10.066      rulex                 40.0     0.98
+       kimi  1002 final randunits units    128 0.067     0.979    0.097    0.982         0.018          9.989      rulex                 40.0     0.98
+       kimi  1002 final randunits units    256 0.133     0.977    0.099    0.977         0.018          9.831      rulex                 40.0     0.98
+       kimi  1002 final randunits units    512 0.267     0.979    0.096    0.977         0.023          9.328      rulex                 40.0     0.98
+       kimi  1002 final randunits units      0 0.000     0.979    0.098    0.977         0.023         10.187      rulex                 40.0     0.98
+       kimi  1002 final randunits units      1 0.001     0.979    0.098    0.977         0.023         10.178      rulex                 40.0     0.98
+       kimi  1002 final randunits units      2 0.001     0.978    0.098    0.977         0.023         10.183      rulex                 40.0     0.98
+       kimi  1002 final randunits units      4 0.002     0.978    0.098    0.977         0.023         10.179      rulex                 40.0     0.98
+       kimi  1002 final randunits units      8 0.004     0.979    0.098    0.977         0.023         10.185      rulex                 40.0     0.98
+       kimi  1002 final randunits units     16 0.008     0.979    0.098    0.977         0.023         10.170      rulex                 40.0     0.98
+       kimi  1002 final randunits units     32 0.017     0.979    0.098    0.982         0.018         10.128      rulex                 40.0     0.98
+       kimi  1002 final randunits units     64 0.033     0.979    0.097    0.973         0.027         10.070      rulex                 40.0     0.98
+       kimi  1002 final randunits units    128 0.067     0.979    0.097    0.973         0.027         10.023      rulex                 40.0     0.98
+       kimi  1002 final randunits units    256 0.133     0.978    0.097    0.986         0.014          9.901      rulex                 40.0     0.98
+       kimi  1002 final randunits units    512 0.267     0.978    0.093    0.982         0.018          9.318      rulex                 40.0     0.98
+       kimi  1002 final randunits units      0 0.000     0.979    0.098    0.977         0.023         10.187      rulex                 40.0     0.98
+       kimi  1002 final randunits units      1 0.001     0.979    0.098    0.977         0.023         10.188      rulex                 40.0     0.98
+       kimi  1002 final randunits units      2 0.001     0.979    0.098    0.977         0.023         10.187      rulex                 40.0     0.98
+       kimi  1002 final randunits units      4 0.002     0.978    0.098    0.977         0.023         10.182      rulex                 40.0     0.98
+       kimi  1002 final randunits units      8 0.004     0.979    0.098    0.982         0.018         10.180      rulex                 40.0     0.98
+       kimi  1002 final randunits units     16 0.008     0.978    0.098    0.977         0.023         10.159      rulex                 40.0     0.98
+       kimi  1002 final randunits units     32 0.017     0.979    0.097    0.977         0.023         10.139      rulex                 40.0     0.98
+       kimi  1002 final randunits units     64 0.033     0.979    0.098    0.977         0.023         10.133      rulex                 40.0     0.98
+       kimi  1002 final randunits units    128 0.067     0.978    0.099    0.982         0.018          9.994      rulex                 40.0     0.98
+       kimi  1002 final randunits units    256 0.133     0.980    0.097    0.973         0.027          9.785      rulex                 40.0     0.98
+       kimi  1002 final randunits units    512 0.267     0.980    0.092    0.973         0.027          9.292      rulex                 40.0     0.98
+       kimi  1000 final      none     -      0 0.000     0.983    0.070      NaN           NaN            NaN       rule                 40.0     0.00
+       kimi  1001 final      none     -      0 0.000     0.984    0.077      NaN           NaN            NaN       rule                 40.0     0.00
+       kimi  1002 final      none     -      0 0.000     0.982    0.086      NaN           NaN            NaN       rule                 40.0     0.00
+      mamba  1000 final      none     -      0 0.000     0.980    0.093    0.986         0.014         12.315      rulex                 40.0     0.98
+      mamba  1000 final   neurons units      0 0.000     0.980    0.093    0.986         0.014         12.315      rulex                 40.0     0.98
+      mamba  1000 final   neurons units      1 0.001     0.980    0.093    0.986         0.014         12.226      rulex                 40.0     0.98
+      mamba  1000 final   neurons units      2 0.001     0.980    0.093    0.986         0.014         12.138      rulex                 40.0     0.98
+      mamba  1000 final   neurons units      4 0.003     0.981    0.092    0.982         0.018         11.976      rulex                 40.0     0.98
+      mamba  1000 final   neurons units      8 0.005     0.981    0.092    0.977         0.023         11.681      rulex                 40.0     0.98
+      mamba  1000 final   neurons units     16 0.010     0.981    0.089    0.977         0.023         11.161      rulex                 40.0     0.98
+      mamba  1000 final   neurons units     32 0.021     0.981    0.088    0.982         0.018         10.324      rulex                 40.0     0.98
+      mamba  1000 final   neurons units     64 0.042     0.980    0.089    0.959         0.036          8.868      rulex                 40.0     0.96
+      mamba  1000 final   neurons units    128 0.083     0.980    0.089    0.887         0.113          6.568      rulex                 40.0     0.88
+      mamba  1000 final   neurons units    256 0.167     0.980    0.087    0.734         0.248          3.178      rulex                 40.0     0.74
+      mamba  1000 final   neurons units    512 0.333     0.980    0.083    0.392         0.577         -0.614      rulex                 40.0     0.40
+      mamba  1000 final randunits units      0 0.000     0.980    0.093    0.986         0.014         12.315      rulex                 40.0     0.98
+      mamba  1000 final randunits units      1 0.001     0.980    0.093    0.986         0.014         12.304      rulex                 40.0     0.98
+      mamba  1000 final randunits units      2 0.001     0.981    0.093    0.986         0.014         12.305      rulex                 40.0     0.98
+      mamba  1000 final randunits units      4 0.003     0.980    0.093    0.991         0.009         12.250      rulex                 40.0     0.98
+      mamba  1000 final randunits units      8 0.005     0.981    0.093    0.986         0.014         12.363      rulex                 40.0     0.98
+      mamba  1000 final randunits units     16 0.010     0.981    0.093    0.986         0.014         12.154      rulex                 40.0     0.98
+      mamba  1000 final randunits units     32 0.021     0.980    0.094    0.991         0.009         12.168      rulex                 40.0     0.98
+      mamba  1000 final randunits units     64 0.042     0.980    0.095    0.982         0.014         11.924      rulex                 40.0     0.98
+      mamba  1000 final randunits units    128 0.083     0.979    0.098    0.977         0.023         11.755      rulex                 40.0     0.98
+      mamba  1000 final randunits units    256 0.167     0.975    0.105    0.986         0.014         11.683      rulex                 40.0     0.98
+      mamba  1000 final randunits units    512 0.333     0.973    0.114    0.955         0.036         10.718      rulex                 40.0     0.96
+      mamba  1000 final randunits units      0 0.000     0.980    0.093    0.986         0.014         12.315      rulex                 40.0     0.98
+      mamba  1000 final randunits units      1 0.001     0.980    0.093    0.986         0.014         12.268      rulex                 40.0     0.98
+      mamba  1000 final randunits units      2 0.001     0.981    0.093    0.986         0.014         12.304      rulex                 40.0     0.98
+      mamba  1000 final randunits units      4 0.003     0.980    0.094    0.986         0.014         12.285      rulex                 40.0     0.98
+      mamba  1000 final randunits units      8 0.005     0.981    0.091    0.982         0.018         12.314      rulex                 40.0     0.98
+      mamba  1000 final randunits units     16 0.010     0.981    0.093    0.986         0.014         12.299      rulex                 40.0     0.98
+      mamba  1000 final randunits units     32 0.021     0.980    0.093    0.982         0.018         12.112      rulex                 40.0     0.98
+      mamba  1000 final randunits units     64 0.042     0.980    0.092    0.982         0.018         12.009      rulex                 40.0     0.98
+      mamba  1000 final randunits units    128 0.083     0.978    0.097    0.986         0.014         12.035      rulex                 40.0     0.98
+      mamba  1000 final randunits units    256 0.167     0.977    0.106    0.986         0.014         11.811      rulex                 40.0     0.98
+      mamba  1000 final randunits units    512 0.333     0.974    0.116    0.959         0.032          9.829      rulex                 40.0     0.96
+      mamba  1000 final randunits units      0 0.000     0.980    0.093    0.986         0.014         12.315      rulex                 40.0     0.98
+      mamba  1000 final randunits units      1 0.001     0.980    0.093    0.986         0.014         12.327      rulex                 40.0     0.98
+      mamba  1000 final randunits units      2 0.001     0.980    0.094    0.986         0.014         12.314      rulex                 40.0     0.98
+      mamba  1000 final randunits units      4 0.003     0.980    0.094    0.986         0.014         12.332      rulex                 40.0     0.98
+      mamba  1000 final randunits units      8 0.005     0.981    0.093    0.982         0.018         12.295      rulex                 40.0     0.98
+      mamba  1000 final randunits units     16 0.010     0.980    0.093    0.982         0.018         12.239      rulex                 40.0     0.98
+      mamba  1000 final randunits units     32 0.021     0.980    0.095    0.986         0.014         12.294      rulex                 40.0     0.98
+      mamba  1000 final randunits units     64 0.042     0.980    0.096    0.986         0.014         12.235      rulex                 40.0     0.98
+      mamba  1000 final randunits units    128 0.083     0.979    0.100    0.986         0.014         11.826      rulex                 40.0     0.98
+      mamba  1000 final randunits units    256 0.167     0.978    0.104    0.982         0.014         11.409      rulex                 40.0     0.98
+      mamba  1000 final randunits units    512 0.333     0.972    0.121    0.950         0.036          9.889      rulex                 40.0     0.96
+      mamba  1001 final      none     -      0 0.000     0.977    0.096    0.982         0.014         12.445      rulex                 40.0     0.98
+      mamba  1001 final   neurons units      0 0.000     0.977    0.096    0.982         0.014         12.445      rulex                 40.0     0.98
+      mamba  1001 final   neurons units      1 0.001     0.977    0.096    0.982         0.014         12.377      rulex                 40.0     0.98
+      mamba  1001 final   neurons units      2 0.001     0.977    0.096    0.982         0.014         12.319      rulex                 40.0     0.98
+      mamba  1001 final   neurons units      4 0.003     0.978    0.096    0.982         0.014         12.194      rulex                 40.0     0.98
+      mamba  1001 final   neurons units      8 0.005     0.978    0.095    0.973         0.023         11.991      rulex                 40.0     0.98
+      mamba  1001 final   neurons units     16 0.010     0.978    0.092    0.968         0.027         11.636      rulex                 40.0     0.98
+      mamba  1001 final   neurons units     32 0.021     0.979    0.089    0.968         0.027         10.978      rulex                 40.0     0.98
+      mamba  1001 final   neurons units     64 0.042     0.980    0.086    0.964         0.032          9.967      rulex                 40.0     0.96
+      mamba  1001 final   neurons units    128 0.083     0.979    0.086    0.937         0.054          8.302      rulex                 40.0     0.94
+      mamba  1001 final   neurons units    256 0.167     0.980    0.083    0.860         0.135          5.638      rulex                 40.0     0.86
+      mamba  1001 final   neurons units    512 0.333     0.978    0.085    0.622         0.360          2.150      rulex                 40.0     0.64
+      mamba  1001 final randunits units      0 0.000     0.977    0.096    0.982         0.014         12.445      rulex                 40.0     0.98
+      mamba  1001 final randunits units      1 0.001     0.977    0.096    0.982         0.014         12.437      rulex                 40.0     0.98
+      mamba  1001 final randunits units      2 0.001     0.978    0.096    0.977         0.018         12.449      rulex                 40.0     0.98
+      mamba  1001 final randunits units      4 0.003     0.978    0.096    0.982         0.014         12.410      rulex                 40.0     0.98
+      mamba  1001 final randunits units      8 0.005     0.977    0.098    0.986         0.009         12.510      rulex                 40.0     0.98
+      mamba  1001 final randunits units     16 0.010     0.977    0.096    0.986         0.009         12.305      rulex                 40.0     0.98
+      mamba  1001 final randunits units     32 0.021     0.977    0.098    0.977         0.018         12.288      rulex                 40.0     0.98
+      mamba  1001 final randunits units     64 0.042     0.977    0.100    0.982         0.014         12.198      rulex                 40.0     0.98
+      mamba  1001 final randunits units    128 0.083     0.976    0.101    0.986         0.009         11.981      rulex                 40.0     0.98
+      mamba  1001 final randunits units    256 0.167     0.975    0.107    0.977         0.018         11.644      rulex                 40.0     0.98
+      mamba  1001 final randunits units    512 0.333     0.969    0.130    0.946         0.045         10.401      rulex                 40.0     0.96
+      mamba  1001 final randunits units      0 0.000     0.977    0.096    0.982         0.014         12.445      rulex                 40.0     0.98
+      mamba  1001 final randunits units      1 0.001     0.978    0.094    0.982         0.014         12.409      rulex                 40.0     0.98
+      mamba  1001 final randunits units      2 0.001     0.977    0.097    0.982         0.014         12.430      rulex                 40.0     0.98
+      mamba  1001 final randunits units      4 0.003     0.977    0.096    0.982         0.014         12.435      rulex                 40.0     0.98
+      mamba  1001 final randunits units      8 0.005     0.978    0.096    0.982         0.014         12.465      rulex                 40.0     0.98
+      mamba  1001 final randunits units     16 0.010     0.977    0.097    0.986         0.009         12.378      rulex                 40.0     0.98
+      mamba  1001 final randunits units     32 0.021     0.977    0.096    0.982         0.014         12.304      rulex                 40.0     0.98
+      mamba  1001 final randunits units     64 0.042     0.976    0.098    0.986         0.009         12.332      rulex                 40.0     0.98
+      mamba  1001 final randunits units    128 0.083     0.975    0.101    0.977         0.018         12.160      rulex                 40.0     0.98
+      mamba  1001 final randunits units    256 0.167     0.974    0.107    0.977         0.018         11.885      rulex                 40.0     0.98
+      mamba  1001 final randunits units    512 0.333     0.968    0.124    0.964         0.027         10.391      rulex                 40.0     0.98
+      mamba  1001 final randunits units      0 0.000     0.977    0.096    0.982         0.014         12.445      rulex                 40.0     0.98
+      mamba  1001 final randunits units      1 0.001     0.978    0.097    0.982         0.014         12.452      rulex                 40.0     0.98
+      mamba  1001 final randunits units      2 0.001     0.977    0.096    0.982         0.014         12.438      rulex                 40.0     0.98
+      mamba  1001 final randunits units      4 0.003     0.977    0.096    0.982         0.014         12.439      rulex                 40.0     0.98
+      mamba  1001 final randunits units      8 0.005     0.977    0.096    0.982         0.014         12.440      rulex                 40.0     0.98
+      mamba  1001 final randunits units     16 0.010     0.977    0.096    0.977         0.018         12.387      rulex                 40.0     0.98
+      mamba  1001 final randunits units     32 0.021     0.977    0.096    0.986         0.009         12.402      rulex                 40.0     0.98
+      mamba  1001 final randunits units     64 0.042     0.978    0.099    0.982         0.014         12.304      rulex                 40.0     0.98
+      mamba  1001 final randunits units    128 0.083     0.977    0.097    0.968         0.027         11.949      rulex                 40.0     0.98
+      mamba  1001 final randunits units    256 0.167     0.974    0.107    0.982         0.014         11.756      rulex                 40.0     0.98
+      mamba  1001 final randunits units    512 0.333     0.972    0.115    0.973         0.018         10.003      rulex                 40.0     0.98
+      mamba  1002 final      none     -      0 0.000     0.979    0.098    0.986         0.009         13.128      rulex                 40.0     0.98
+      mamba  1002 final   neurons units      0 0.000     0.979    0.098    0.986         0.009         13.128      rulex                 40.0     0.98
+      mamba  1002 final   neurons units      1 0.001     0.979    0.098    0.982         0.014         13.054      rulex                 40.0     0.98
+      mamba  1002 final   neurons units      2 0.001     0.979    0.098    0.982         0.014         12.960      rulex                 40.0     0.98
+      mamba  1002 final   neurons units      4 0.003     0.980    0.098    0.982         0.014         12.797      rulex                 40.0     0.98
+      mamba  1002 final   neurons units      8 0.005     0.980    0.097    0.982         0.014         12.521      rulex                 40.0     0.98
+      mamba  1002 final   neurons units     16 0.010     0.980    0.097    0.977         0.018         12.051      rulex                 40.0     0.98
+      mamba  1002 final   neurons units     32 0.021     0.980    0.095    0.968         0.027         11.222      rulex                 40.0     0.98
+      mamba  1002 final   neurons units     64 0.042     0.981    0.093    0.959         0.036          9.768      rulex                 40.0     0.96
+      mamba  1002 final   neurons units    128 0.083     0.981    0.092    0.878         0.122          7.366      rulex                 40.0     0.88
+      mamba  1002 final   neurons units    256 0.167     0.982    0.088    0.743         0.257          3.642      rulex                 40.0     0.74
+      mamba  1002 final   neurons units    512 0.333     0.982    0.089    0.378         0.622         -1.110      rulex                 40.0     0.38
+      mamba  1002 final randunits units      0 0.000     0.979    0.098    0.986         0.009         13.128      rulex                 40.0     0.98
+      mamba  1002 final randunits units      1 0.001     0.979    0.098    0.986         0.009         13.118      rulex                 40.0     0.98
+      mamba  1002 final randunits units      2 0.001     0.979    0.098    0.986         0.009         13.113      rulex                 40.0     0.98
+      mamba  1002 final randunits units      4 0.003     0.979    0.101    0.986         0.009         13.074      rulex                 40.0     0.98
+      mamba  1002 final randunits units      8 0.005     0.979    0.099    0.986         0.009         13.205      rulex                 40.0     0.98
+      mamba  1002 final randunits units     16 0.010     0.980    0.099    0.986         0.009         12.960      rulex                 40.0     0.98
+      mamba  1002 final randunits units     32 0.021     0.979    0.099    0.986         0.009         12.972      rulex                 40.0     0.98
+      mamba  1002 final randunits units     64 0.042     0.979    0.100    0.982         0.014         12.804      rulex                 40.0     0.98
+      mamba  1002 final randunits units    128 0.083     0.979    0.102    0.982         0.014         12.459      rulex                 40.0     0.98
+      mamba  1002 final randunits units    256 0.167     0.979    0.105    0.977         0.014         12.340      rulex                 40.0     0.98
+      mamba  1002 final randunits units    512 0.333     0.974    0.119    0.968         0.023         11.043      rulex                 40.0     0.98
+      mamba  1002 final randunits units      0 0.000     0.979    0.098    0.986         0.009         13.128      rulex                 40.0     0.98
+      mamba  1002 final randunits units      1 0.001     0.979    0.098    0.986         0.009         13.085      rulex                 40.0     0.98
+      mamba  1002 final randunits units      2 0.001     0.979    0.099    0.986         0.009         13.114      rulex                 40.0     0.98
+      mamba  1002 final randunits units      4 0.003     0.979    0.099    0.986         0.009         13.114      rulex                 40.0     0.98
+      mamba  1002 final randunits units      8 0.005     0.979    0.098    0.986         0.009         13.145      rulex                 40.0     0.98
+      mamba  1002 final randunits units     16 0.010     0.979    0.099    0.986         0.009         13.052      rulex                 40.0     0.98
+      mamba  1002 final randunits units     32 0.021     0.979    0.099    0.991         0.005         12.971      rulex                 40.0     0.98
+      mamba  1002 final randunits units     64 0.042     0.979    0.102    0.982         0.014         12.846      rulex                 40.0     0.98
+      mamba  1002 final randunits units    128 0.083     0.980    0.096    0.986         0.009         12.772      rulex                 40.0     0.98
+      mamba  1002 final randunits units    256 0.167     0.978    0.105    0.991         0.005         12.502      rulex                 40.0     0.98
+      mamba  1002 final randunits units    512 0.333     0.975    0.116    0.964         0.032         10.895      rulex                 40.0     0.96
+      mamba  1002 final randunits units      0 0.000     0.979    0.098    0.986         0.009         13.128      rulex                 40.0     0.98
+      mamba  1002 final randunits units      1 0.001     0.979    0.099    0.986         0.009         13.124      rulex                 40.0     0.98
+      mamba  1002 final randunits units      2 0.001     0.979    0.098    0.986         0.009         13.130      rulex                 40.0     0.98
+      mamba  1002 final randunits units      4 0.003     0.979    0.098    0.986         0.009         13.124      rulex                 40.0     0.98
+      mamba  1002 final randunits units      8 0.005     0.979    0.099    0.986         0.009         13.106      rulex                 40.0     0.98
+      mamba  1002 final randunits units     16 0.010     0.979    0.099    0.986         0.009         13.070      rulex                 40.0     0.98
+      mamba  1002 final randunits units     32 0.021     0.979    0.099    0.986         0.009         13.117      rulex                 40.0     0.98
+      mamba  1002 final randunits units     64 0.042     0.979    0.095    0.986         0.009         12.955      rulex                 40.0     0.98
+      mamba  1002 final randunits units    128 0.083     0.979    0.103    0.986         0.005         12.602      rulex                 40.0     0.98
+      mamba  1002 final randunits units    256 0.167     0.978    0.103    0.986         0.009         12.148      rulex                 40.0     0.98
+      mamba  1002 final randunits units    512 0.333     0.977    0.108    0.964         0.027         10.344      rulex                 40.0     0.98
+      mamba  1000 final      none     -      0 0.000     0.985    0.062      NaN           NaN            NaN       rule                 40.0     0.00
+      mamba  1001 final      none     -      0 0.000     0.986    0.068      NaN           NaN            NaN       rule                 40.0     0.00
+      mamba  1002 final      none     -      0 0.000     0.986    0.062      NaN           NaN            NaN       rule                 40.0     0.00
+transformer  1000 final      none     -      0 0.000     0.982    0.077    0.883         0.108          4.757      rulex                 40.0     0.90
+transformer  1000 final   neurons units      0 0.000     0.982    0.077    0.883         0.108          4.757      rulex                 40.0     0.90
+transformer  1000 final   neurons units      1 0.001     0.982    0.076    0.887         0.104          4.726      rulex                 40.0     0.90
+transformer  1000 final   neurons units      2 0.001     0.982    0.076    0.883         0.108          4.701      rulex                 40.0     0.90
+transformer  1000 final   neurons units      4 0.003     0.982    0.075    0.887         0.104          4.661      rulex                 40.0     0.90
+transformer  1000 final   neurons units      8 0.005     0.983    0.074    0.887         0.104          4.595      rulex                 40.0     0.90
+transformer  1000 final   neurons units     16 0.010     0.983    0.073    0.878         0.113          4.484      rulex                 40.0     0.88
+transformer  1000 final   neurons units     32 0.021     0.983    0.072    0.878         0.113          4.290      rulex                 40.0     0.88
+transformer  1000 final   neurons units     64 0.042     0.983    0.069    0.869         0.122          3.957      rulex                 40.0     0.88
+transformer  1000 final   neurons units    128 0.083     0.983    0.063    0.847         0.144          3.402      rulex                 40.0     0.86
+transformer  1000 final   neurons units    256 0.167     0.985    0.058    0.797         0.194          2.484      rulex                 40.0     0.80
+transformer  1000 final   neurons units    512 0.333     0.986    0.053    0.680         0.297          1.280      rulex                 40.0     0.70
+transformer  1000 final randunits units      0 0.000     0.982    0.077    0.883         0.108          4.757      rulex                 40.0     0.90
+transformer  1000 final randunits units      1 0.001     0.982    0.077    0.883         0.108          4.753      rulex                 40.0     0.90
+transformer  1000 final randunits units      2 0.001     0.982    0.077    0.883         0.108          4.751      rulex                 40.0     0.90
+transformer  1000 final randunits units      4 0.003     0.982    0.077    0.883         0.108          4.742      rulex                 40.0     0.90
+transformer  1000 final randunits units      8 0.005     0.982    0.077    0.883         0.108          4.767      rulex                 40.0     0.90
+transformer  1000 final randunits units     16 0.010     0.982    0.076    0.883         0.108          4.723      rulex                 40.0     0.90
+transformer  1000 final randunits units     32 0.021     0.982    0.077    0.883         0.108          4.732      rulex                 40.0     0.90
+transformer  1000 final randunits units     64 0.042     0.982    0.077    0.883         0.108          4.696      rulex                 40.0     0.90
+transformer  1000 final randunits units    128 0.083     0.982    0.077    0.883         0.108          4.655      rulex                 40.0     0.90
+transformer  1000 final randunits units    256 0.167     0.982    0.076    0.892         0.099          4.643      rulex                 40.0     0.90
+transformer  1000 final randunits units    512 0.333     0.982    0.075    0.883         0.108          4.379      rulex                 40.0     0.90
+transformer  1000 final randunits units      0 0.000     0.982    0.077    0.883         0.108          4.757      rulex                 40.0     0.90
+transformer  1000 final randunits units      1 0.001     0.982    0.077    0.883         0.108          4.746      rulex                 40.0     0.90
+transformer  1000 final randunits units      2 0.001     0.982    0.077    0.883         0.108          4.752      rulex                 40.0     0.90
+transformer  1000 final randunits units      4 0.003     0.982    0.077    0.883         0.108          4.754      rulex                 40.0     0.90
+transformer  1000 final randunits units      8 0.005     0.982    0.077    0.892         0.099          4.774      rulex                 40.0     0.90
+transformer  1000 final randunits units     16 0.010     0.982    0.076    0.878         0.113          4.738      rulex                 40.0     0.88
+transformer  1000 final randunits units     32 0.021     0.982    0.077    0.878         0.113          4.709      rulex                 40.0     0.88
+transformer  1000 final randunits units     64 0.042     0.981    0.077    0.887         0.104          4.740      rulex                 40.0     0.90
+transformer  1000 final randunits units    128 0.083     0.982    0.078    0.887         0.104          4.705      rulex                 40.0     0.90
+transformer  1000 final randunits units    256 0.167     0.981    0.079    0.887         0.104          4.726      rulex                 40.0     0.90
+transformer  1000 final randunits units    512 0.333     0.981    0.076    0.896         0.095          4.334      rulex                 40.0     0.90
+transformer  1000 final randunits units      0 0.000     0.982    0.077    0.883         0.108          4.757      rulex                 40.0     0.90
+transformer  1000 final randunits units      1 0.001     0.982    0.077    0.887         0.104          4.761      rulex                 40.0     0.90
+transformer  1000 final randunits units      2 0.001     0.982    0.077    0.883         0.108          4.758      rulex                 40.0     0.90
+transformer  1000 final randunits units      4 0.003     0.982    0.077    0.887         0.104          4.759      rulex                 40.0     0.90
+transformer  1000 final randunits units      8 0.005     0.982    0.077    0.887         0.104          4.764      rulex                 40.0     0.90
+transformer  1000 final randunits units     16 0.010     0.983    0.076    0.883         0.108          4.708      rulex                 40.0     0.90
+transformer  1000 final randunits units     32 0.021     0.982    0.076    0.883         0.108          4.724      rulex                 40.0     0.90
+transformer  1000 final randunits units     64 0.042     0.982    0.077    0.892         0.099          4.760      rulex                 40.0     0.90
+transformer  1000 final randunits units    128 0.083     0.982    0.076    0.874         0.117          4.691      rulex                 40.0     0.88
+transformer  1000 final randunits units    256 0.167     0.983    0.076    0.874         0.117          4.584      rulex                 40.0     0.88
+transformer  1000 final randunits units    512 0.333     0.982    0.075    0.874         0.117          4.191      rulex                 40.0     0.88
+transformer  1001 final      none     -      0 0.000     0.981    0.081    0.860         0.135          4.896      rulex                 40.0     0.86
+transformer  1001 final   neurons units      0 0.000     0.981    0.081    0.860         0.135          4.896      rulex                 40.0     0.86
+transformer  1001 final   neurons units      1 0.001     0.981    0.080    0.860         0.135          4.863      rulex                 40.0     0.86
+transformer  1001 final   neurons units      2 0.001     0.981    0.080    0.860         0.135          4.843      rulex                 40.0     0.86
+transformer  1001 final   neurons units      4 0.003     0.982    0.080    0.860         0.135          4.802      rulex                 40.0     0.86
+transformer  1001 final   neurons units      8 0.005     0.982    0.080    0.860         0.135          4.727      rulex                 40.0     0.86
+transformer  1001 final   neurons units     16 0.010     0.982    0.079    0.865         0.131          4.593      rulex                 40.0     0.86
+transformer  1001 final   neurons units     32 0.021     0.982    0.077    0.856         0.140          4.372      rulex                 40.0     0.86
+transformer  1001 final   neurons units     64 0.042     0.982    0.075    0.833         0.162          3.995      rulex                 40.0     0.84
+transformer  1001 final   neurons units    128 0.083     0.983    0.071    0.788         0.198          3.395      rulex                 40.0     0.80
+transformer  1001 final   neurons units    256 0.167     0.983    0.066    0.712         0.270          2.490      rulex                 40.0     0.72
+transformer  1001 final   neurons units    512 0.333     0.983    0.064    0.604         0.378          1.301      rulex                 40.0     0.62
+transformer  1001 final randunits units      0 0.000     0.981    0.081    0.860         0.135          4.896      rulex                 40.0     0.86
+transformer  1001 final randunits units      1 0.001     0.981    0.080    0.860         0.135          4.892      rulex                 40.0     0.86
+transformer  1001 final randunits units      2 0.001     0.981    0.081    0.860         0.135          4.893      rulex                 40.0     0.86
+transformer  1001 final randunits units      4 0.003     0.981    0.080    0.860         0.135          4.880      rulex                 40.0     0.86
+transformer  1001 final randunits units      8 0.005     0.981    0.081    0.865         0.131          4.915      rulex                 40.0     0.86
+transformer  1001 final randunits units     16 0.010     0.981    0.080    0.865         0.131          4.851      rulex                 40.0     0.86
+transformer  1001 final randunits units     32 0.021     0.981    0.080    0.865         0.131          4.871      rulex                 40.0     0.86
+transformer  1001 final randunits units     64 0.042     0.982    0.080    0.860         0.135          4.800      rulex                 40.0     0.86
+transformer  1001 final randunits units    128 0.083     0.981    0.080    0.851         0.144          4.754      rulex                 40.0     0.86
+transformer  1001 final randunits units    256 0.167     0.981    0.081    0.856         0.135          4.808      rulex                 40.0     0.86
+transformer  1001 final randunits units    512 0.333     0.980    0.087    0.842         0.149          4.598      rulex                 40.0     0.84
+transformer  1001 final randunits units      0 0.000     0.981    0.081    0.860         0.135          4.896      rulex                 40.0     0.86
+transformer  1001 final randunits units      1 0.001     0.981    0.080    0.856         0.140          4.884      rulex                 40.0     0.86
+transformer  1001 final randunits units      2 0.001     0.981    0.080    0.860         0.135          4.891      rulex                 40.0     0.86
+transformer  1001 final randunits units      4 0.003     0.981    0.081    0.860         0.135          4.892      rulex                 40.0     0.86
+transformer  1001 final randunits units      8 0.005     0.981    0.081    0.860         0.135          4.913      rulex                 40.0     0.86
+transformer  1001 final randunits units     16 0.010     0.981    0.081    0.860         0.135          4.887      rulex                 40.0     0.86
+transformer  1001 final randunits units     32 0.021     0.981    0.081    0.860         0.135          4.856      rulex                 40.0     0.86
+transformer  1001 final randunits units     64 0.042     0.981    0.080    0.865         0.131          4.839      rulex                 40.0     0.86
+transformer  1001 final randunits units    128 0.083     0.981    0.081    0.865         0.131          4.833      rulex                 40.0     0.86
+transformer  1001 final randunits units    256 0.167     0.981    0.082    0.869         0.126          4.851      rulex                 40.0     0.88
+transformer  1001 final randunits units    512 0.333     0.980    0.078    0.874         0.122          4.362      rulex                 40.0     0.88
+transformer  1001 final randunits units      0 0.000     0.981    0.081    0.860         0.135          4.896      rulex                 40.0     0.86
+transformer  1001 final randunits units      1 0.001     0.981    0.081    0.860         0.135          4.896      rulex                 40.0     0.86
+transformer  1001 final randunits units      2 0.001     0.981    0.081    0.860         0.135          4.891      rulex                 40.0     0.86
+transformer  1001 final randunits units      4 0.003     0.981    0.081    0.860         0.135          4.894      rulex                 40.0     0.86
+transformer  1001 final randunits units      8 0.005     0.981    0.081    0.860         0.135          4.889      rulex                 40.0     0.86
+transformer  1001 final randunits units     16 0.010     0.982    0.080    0.860         0.135          4.874      rulex                 40.0     0.86
+transformer  1001 final randunits units     32 0.021     0.981    0.081    0.860         0.135          4.896      rulex                 40.0     0.86
+transformer  1001 final randunits units     64 0.042     0.981    0.082    0.860         0.135          4.907      rulex                 40.0     0.86
+transformer  1001 final randunits units    128 0.083     0.981    0.079    0.860         0.135          4.765      rulex                 40.0     0.86
+transformer  1001 final randunits units    256 0.167     0.981    0.083    0.874         0.122          4.748      rulex                 40.0     0.88
+transformer  1001 final randunits units    512 0.333     0.980    0.084    0.860         0.131          4.307      rulex                 40.0     0.86
+transformer  1002 final      none     -      0 0.000     0.981    0.090    0.865         0.135          5.124      rulex                 40.0     0.86
+transformer  1002 final   neurons units      0 0.000     0.981    0.090    0.865         0.135          5.124      rulex                 40.0     0.86
+transformer  1002 final   neurons units      1 0.001     0.981    0.090    0.865         0.135          5.098      rulex                 40.0     0.86
+transformer  1002 final   neurons units      2 0.001     0.980    0.089    0.865         0.135          5.076      rulex                 40.0     0.86
+transformer  1002 final   neurons units      4 0.003     0.980    0.089    0.869         0.131          5.035      rulex                 40.0     0.86
+transformer  1002 final   neurons units      8 0.005     0.980    0.089    0.865         0.135          4.968      rulex                 40.0     0.86
+transformer  1002 final   neurons units     16 0.010     0.980    0.088    0.865         0.135          4.847      rulex                 40.0     0.86
+transformer  1002 final   neurons units     32 0.021     0.981    0.086    0.851         0.149          4.628      rulex                 40.0     0.86
+transformer  1002 final   neurons units     64 0.042     0.982    0.082    0.838         0.158          4.260      rulex                 40.0     0.84
+transformer  1002 final   neurons units    128 0.083     0.982    0.077    0.802         0.194          3.632      rulex                 40.0     0.80
+transformer  1002 final   neurons units    256 0.167     0.982    0.070    0.761         0.230          2.696      rulex                 40.0     0.76
+transformer  1002 final   neurons units    512 0.333     0.983    0.066    0.658         0.320          1.414      rulex                 40.0     0.68
+transformer  1002 final randunits units      0 0.000     0.981    0.090    0.865         0.135          5.124      rulex                 40.0     0.86
+transformer  1002 final randunits units      1 0.001     0.981    0.090    0.865         0.135          5.120      rulex                 40.0     0.86
+transformer  1002 final randunits units      2 0.001     0.981    0.090    0.865         0.135          5.117      rulex                 40.0     0.86
+transformer  1002 final randunits units      4 0.003     0.981    0.090    0.865         0.135          5.107      rulex                 40.0     0.86
+transformer  1002 final randunits units      8 0.005     0.981    0.090    0.865         0.135          5.148      rulex                 40.0     0.86
+transformer  1002 final randunits units     16 0.010     0.980    0.090    0.865         0.135          5.095      rulex                 40.0     0.86
+transformer  1002 final randunits units     32 0.021     0.981    0.090    0.869         0.131          5.082      rulex                 40.0     0.86
+transformer  1002 final randunits units     64 0.042     0.980    0.090    0.851         0.140          5.057      rulex                 40.0     0.86
+transformer  1002 final randunits units    128 0.083     0.980    0.089    0.856         0.144          5.015      rulex                 40.0     0.86
+transformer  1002 final randunits units    256 0.167     0.980    0.092    0.869         0.126          5.027      rulex                 40.0     0.88
+transformer  1002 final randunits units    512 0.333     0.979    0.093    0.833         0.158          4.850      rulex                 40.0     0.84
+transformer  1002 final randunits units      0 0.000     0.981    0.090    0.865         0.135          5.124      rulex                 40.0     0.86
+transformer  1002 final randunits units      1 0.001     0.981    0.090    0.865         0.135          5.111      rulex                 40.0     0.86
+transformer  1002 final randunits units      2 0.001     0.981    0.090    0.865         0.135          5.119      rulex                 40.0     0.86
+transformer  1002 final randunits units      4 0.003     0.980    0.090    0.865         0.135          5.119      rulex                 40.0     0.86
+transformer  1002 final randunits units      8 0.005     0.980    0.090    0.869         0.131          5.147      rulex                 40.0     0.86
+transformer  1002 final randunits units     16 0.010     0.980    0.090    0.860         0.135          5.120      rulex                 40.0     0.86
+transformer  1002 final randunits units     32 0.021     0.980    0.090    0.869         0.131          5.091      rulex                 40.0     0.86
+transformer  1002 final randunits units     64 0.042     0.980    0.091    0.865         0.135          5.092      rulex                 40.0     0.86
+transformer  1002 final randunits units    128 0.083     0.980    0.090    0.865         0.135          5.053      rulex                 40.0     0.86
+transformer  1002 final randunits units    256 0.167     0.980    0.091    0.892         0.108          5.108      rulex                 40.0     0.90
+transformer  1002 final randunits units    512 0.333     0.978    0.093    0.874         0.122          4.733      rulex                 40.0     0.88
+transformer  1002 final randunits units      0 0.000     0.981    0.090    0.865         0.135          5.124      rulex                 40.0     0.86
+transformer  1002 final randunits units      1 0.001     0.981    0.090    0.869         0.131          5.129      rulex                 40.0     0.86
+transformer  1002 final randunits units      2 0.001     0.980    0.090    0.865         0.135          5.123      rulex                 40.0     0.86
+transformer  1002 final randunits units      4 0.003     0.980    0.090    0.865         0.135          5.125      rulex                 40.0     0.86
+transformer  1002 final randunits units      8 0.005     0.980    0.090    0.865         0.135          5.126      rulex                 40.0     0.86
+transformer  1002 final randunits units     16 0.010     0.981    0.090    0.869         0.131          5.105      rulex                 40.0     0.86
+transformer  1002 final randunits units     32 0.021     0.981    0.090    0.865         0.135          5.124      rulex                 40.0     0.86
+transformer  1002 final randunits units     64 0.042     0.980    0.090    0.860         0.131          5.136      rulex                 40.0     0.86
+transformer  1002 final randunits units    128 0.083     0.980    0.088    0.869         0.131          5.047      rulex                 40.0     0.86
+transformer  1002 final randunits units    256 0.167     0.980    0.091    0.842         0.149          4.936      rulex                 40.0     0.84
+transformer  1002 final randunits units    512 0.333     0.979    0.090    0.851         0.140          4.635      rulex                 40.0     0.86
+transformer  1000 final      none     -      0 0.000     0.989    0.047      NaN           NaN            NaN       rule                 40.0     0.00
+transformer  1001 final      none     -      0 0.000     0.990    0.044      NaN           NaN            NaN       rule                 40.0     0.00
+transformer  1002 final      none     -      0 0.000     0.989    0.048      NaN           NaN            NaN       rule                 40.0     0.00
